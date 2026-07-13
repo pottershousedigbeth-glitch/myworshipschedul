@@ -1,0 +1,120 @@
+{
+  "identity": {
+    "name": "E1",
+    "mission": "Create a worship team app that feels like a Sunday morning: bright, organized, and uplifting, avoiding the sterile 'spreadsheet' look of typical admin tools.",
+    "archetype": "Organic & Earthy (Modernized)",
+    "vibe": "Clean, Professional, Warm, Reliable"
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "Use for all page titles, card headers, and modal titles. Tracking tight (-0.02em).",
+      "import": "@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');"
+    },
+    "body": {
+      "family": "'Plus Jakarta Sans', sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "Use for all standard text, inputs, and data tables. Excellent legibility at small sizes."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#1e293b",
+        "foreground": "#f8fafc",
+        "description": "Deep Slate Blue - Authority and Calm"
+      },
+      "secondary": {
+        "DEFAULT": "#f1f5f9",
+        "foreground": "#0f172a",
+        "description": "Cool Grey - Backgrounds and secondary buttons"
+      },
+      "accent": {
+        "DEFAULT": "#d97706",
+        "foreground": "#ffffff",
+        "description": "Warm Amber - For 'Worship', 'Music', and primary actions"
+      },
+      "background": "#ffffff",
+      "surface": "#f8fafc",
+      "success": "#059669",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-slate-900 to-slate-800",
+      "card_hover": "hover:bg-slate-50"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "rounded-xl",
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(0,0,0,0.04)]",
+      "floating": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]"
+    },
+    "glassmorphism": "bg-white/80 backdrop-blur-md border border-white/20",
+    "textures": "Use a subtle noise texture on the main background if possible to reduce digital sterility."
+  },
+  "layout_strategies": {
+    "dashboard": {
+      "type": "Bento Grid",
+      "structure": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "hero_card": "col-span-full md:col-span-8 row-span-2",
+      "stat_card": "col-span-6 md:col-span-4",
+      "list_card": "col-span-full md:col-span-4 row-span-2"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8",
+      "internal_padding": "p-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 rounded-full font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-6 rounded-full font-medium transition-all",
+      "ghost": "hover:bg-accent/10 hover:text-accent h-10 px-4 rounded-full transition-colors"
+    },
+    "cards": {
+      "base": "bg-white border border-slate-100 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200",
+      "interactive": "cursor-pointer hover:border-accent/50 transition-colors"
+    },
+    "inputs": {
+      "style": "h-11 rounded-lg border-slate-200 focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all bg-slate-50/50"
+    },
+    "status_badges": {
+      "confirmed": "bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide",
+      "pending": "bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide",
+      "declined": "bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide"
+    }
+  },
+  "image_urls": {
+    "hero_worship": {
+      "url": "https://images.unsplash.com/photo-1598387181032-a3103a2db5b3",
+      "alt": "Worship team playing guitars",
+      "usage": "Dashboard Hero or Login Screen"
+    },
+    "instruments": {
+      "drums": "https://images.unsplash.com/photo-1553520423-f1a93190f36f",
+      "mic": "https://images.unsplash.com/photo-1760830477848-8dcfeb038f8a"
+    },
+    "avatars": [
+      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100",
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&h=100"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "file_type": "Use .js extensions for all files. Do not use TypeScript syntax.",
+    "icons": "Use lucide-react for all icons (Calendar, Music, Users, Mic, Guitar, etc).",
+    "date_handling": "Use date-fns for all date formatting.",
+    "state_management": "Use simple React useState/useEffect. No Redux needed for this MVP.",
+    "mock_data": "Create a robust 'mockData.js' file to simulate the database. Do not leave the app empty.",
+    "navigation": "Create a SidebarLayout component that wraps the main content. Use a dark sidebar for contrast."
+  },
+  "universal_guidelines": {
+    "animation": "Add 'transition-all duration-200' to all interactive elements. Use 'animate-in fade-in slide-in-from-bottom-4' for page loads.",
+    "accessibility": "Ensure all text has sufficient contrast. Use semantic HTML (main, section, article).",
+    "testing": "Add data-testid attributes to all buttons, inputs, and cards (e.g., data-testid='add-member-btn')."
+  }
+}
